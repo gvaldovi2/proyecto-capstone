@@ -1,30 +1,48 @@
 # proyecto-capstone
-PROYECTO: SISTEMA DE MONITOREO EN TIEMPO REAL PARA LA SALUD (SIMORE)
+PROYECTO: GESTOR DE TRAFICO VEHICULAR CONTROLADO PO
 
 INTEGRANTES
 Francisco Javier Merino Muñoz
 Gonzalo Valdovinos Chacón
 Julio Cesar Cerecedo Márquez 
 
-DIAGNÓSTICO
-La cuestión del sector de servicios de salud en México requiere de una completa reestructuración con lo que respecta a el manejo de datos, ya que aun contando con diferentes sistemas entre ellos las bases de datos, no han ido evolucionando junto de la mano de la tecnología actual. En algunas ocasiones este hecho a ocasionado que algunos pacientes no logren ser atendidos a tiempo, y muchos otros el llevar un buen plan respecto a sus condiciones.
+Objetivos generales:
+Una de las mayores problemáticas actuales que presentan las grandes ciudades en la actualidad es el gran congestionamiento vehicular, el cual genera contaminación, estrés en la población y un alto índice de accidentes como causa directa. Estas consecuencias afectan a la población en general ya que como causa, trabajadores y estudiantes llegan tarde a sus deberes, empresas demoran sus tiempos de entregas y recibimiento de mercancías, entre otros. La idea de la elaboración de este proyecto es lograr satisfacer una mejor gestión de tráfico, como solución a estas problemáticas.
 
-OBJETIVOS Y PROPÓSITO
-El objetivo fundamental de este proyecto es que por medio de la tecnología junto en la aplicación con los temas provistos en este curso, trabajar en una solución del manejo de datos en tiempo real, para proveer un mejor servicio y más adecuado a quien corresponda. La propuesta corresponde a la elaboración de un sistema de monitoreo de datos vitales en tiempo real, el cual pude ser utilizado al momento que una persona está siendo trasladada a un hospital, monitorear pacientes de alto riego en hospitales, o incluso en el mismo hogar para nosotros mismo o cualquier familiar. Creemos que tiene aun un sector mas amplio de aplicación, sin embargo, nos centraremos en este objetivo.
-Nuestros objetivos secundarios serían los siguientes:
--Hacer uso de los conocimientos adquiridos durante el curso
--La utilización de 3 o mas sensores para la medición de signos vitales
--El compromiso a elaborar nuestra propuesta
+Objetivos específicos:
+-Reducir el índice de contaminación provocada por el congestiona-miento vehicular.
+-Reducir el índice de accidentes vehiculares.
+-Monitorización y actualización de servicios de gestión de tráfico, por medio de redes neuronales y servidores
+
+Descripción del proyecto:
+La intención del desarrollo de este proyecto es precisamente solu-cionar las problemáticas planteadas en los objetivos, más defini-damente por ejemplo reducir el índice de co2 provocado por el consumo de combustibles de automóviles al tener un mayor flujo de tráfico, ya que de esta manera reducen su tiempo de conducción y por lo tanto su consumo de gasolina. Al igual de tener que estar sujetos a el flujo por medio de una IA se reducirán los accidentes ya que evidentemente el pasarse un semáforo como ejemplo se con-vertiría en una situación de alto riesgo para el conductor, sin em-bargo, no habría necesidad de realizarlo, debido al mayor flujo vehicular.
+
+Productos:
+Se desarrollará una maqueta elaborada a escala capas de representar el funcionamiento del sistema de manera adecuada. El cual contendrá semáforos compuestos por una cámara espcam32 y los leds correspondientes para cada indicación del semáforo. Se realizará una red neuronal para la gestión del sistema al igual de un servidor para el muestreo de datos obtenidos por medio de la red neuronal. 
+
+Servicios:
+La creación de un nuevo servicio como plan de implementación para todas aquellas ciudades que pretendan modernizarse.
+Servicios de asistencia técnica y mantenimientos
+Servicios de instalación del producto
+
+Resultados esperados:
+La implementación de este producto lograra disminuir en gran ma-nera trayectos dentro de las ciudades, disminución de contamina-ción, menor gasto de combustibles provocando un ahorro al bolsi-llo de los individuos, reducción de accidentes automovilísticos, la reducción de uso de personal de tránsito en labores de gestión vehicular logrando concentrarse más en asistencia del conductor.
+
+Rol del miembro:
+JULIO CERECEDO: ELABORACION DE MAQUETA FUNCIONAL
+FRANCISCO MUÑOZ: ELABORACIÓN DE SERVIDORES
+GONZALO VALDOVINOS: ELABORACION DE RED NEURONAL Y DEL SISTEMA
 
 
-
-ACTIVIDADES
-1-Investigacion profunda sobre que mediciones de signos vitales son importantes para promover o informar un estado ya sea para una alerta o una simple revisión.
+Actividades:
+1-Investigacion profundA.
 2-Investigacion de sensores que vayan a ser utilizados.
 3-Realizacion de un plan de trabajo para la realización del proyecto
 -Elaboración de código
 -Diseños preliminares
 -Realización del prototipo
--Asignación de tareas conjuntas eh individuales
+-Asignación de tareas conjuntas e individuales
 -Organización de actividades
-4-Ejecucion del plan del trabajo 
+
+
+Ejecucion del plan del trabajo:
