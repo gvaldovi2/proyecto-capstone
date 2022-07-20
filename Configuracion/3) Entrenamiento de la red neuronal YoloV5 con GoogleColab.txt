@@ -1,0 +1,49 @@
+Entrenamiento de la IA
+
+https://colab.research.google.com/github/roboflow-ai/yolov5-custom-training-tutorial/blob/main/yolov5-custom-training.ipynb#scrollTo=vddF2sdfGHfP
+
+1) Instalar los requerimientos
+
+2) Descomprimir el data con images y labels
+
+!unzip -q /content/data.zip -d /content/
+
+3)Modificar el custom.yaml e instalarlo en la siguiente ruta
+
+/content/yolov5/data/
+
+El contenido incluye:
+
+/////////////////////////////////////////////////////////////////////////////////
+
+train: /content/data/images/train  # train images (relative to 'path') 128 images
+val: /content/data/images/val  # val images (relative to 'path') 128 images
+test:  # test images (optional)
+
+# Classes
+nc: 1  # number of classes
+names: ['carro']  # class names
+
+
+# Download script/URL (optional)
+download: https://ultralytics.com/assets/coco128.zip
+
+////////////////////////////////////////////////////////////////////////////////////
+
+4) Empezar el entrenamiento con el comando
+
+!python train.py --img 640 --batch 4 --epochs 60 --data /content/yolov5/data/custom.yaml --weights yolov5x.pt --cache
+
+5)Evaluar la presición con el comando
+
+# Start tensorboard
+# Launch after you have started training
+# logs save in the folder "runs"
+%load_ext tensorboard
+%tensorboard --logdir runs
+
+6)Descargar el archivo para Pytorch
+
+#export your model's weights for future use
+from google.colab import files
+files.download('./runs/train/exp/weights/best.pt')

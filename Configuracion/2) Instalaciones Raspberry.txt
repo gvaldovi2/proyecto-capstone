@@ -1,0 +1,169 @@
+
+
+Nota: El "-" representa un comando pero no se debe escribir.
+Nota: El "**" representa instrucciones.
+
+
+
+///////////////////////////////////////////////////////////
+		Comunicación via SSH para VNC
+///////////////////////////////////////////////////////////
+
+Instalar VNC viewer en la maquina virtual:
+
+	https://www.realvnc.com/es/connect/download/viewer/
+
+Verificar la IP de Raspberry en wNetWatcher
+
+En la consola de la maquina virtual escribir
+-ssh pi@192.168.x.x
+
+Ejecutar
+-sudo raspi-config
+2 Display Options > D5 VNC Resolution > (Escoger cualquier resolución, se recomienda 1280x720) > Ok
+3 Interface Options > P3 VNC > Yes > Ok
+
+> Finish
+
+
+
+///////////////////////////////////////////////////////////
+		Instalación de Github
+///////////////////////////////////////////////////////////
+
+	-sudo apt-get update
+	-sudo apt-get install git -y
+	-git --version
+
+	Configuración:
+
+	-git config --global user.name "FJmermun"
+	-git config --global user.email "fmerino@uv.mx"
+	-git config --list
+
+	Clonar Repositorios:
+	-git clone https://github.com/FJmermun/proyecto-capstone.git
+
+	***Instalación en Raspberry Pi de la detección de Autos**
+
+	-git clone https://github.com/ultralytics/yolov5.git
+	-cd yolov5
+	-pip install -r requirements.txt
+
+
+///////////////////////////////////////////////////////////
+	Instalación del teclado virtual onBoard (opcional)
+///////////////////////////////////////////////////////////
+
+-sudo apt update 
+-sudo apt install onboard
+
+
+///////////////////////////////////////////////////////////
+	Instalación de la libreria de la IA
+///////////////////////////////////////////////////////////
+-git clone https://github.com/ultralytics/yolov5  # clone
+-cd yolov5
+-pip install -r https://raw.githubusercontent.com/ultralytics/yolov5/master/requirements.txt
+-pip install -r requirements.txt
+
+
+//////////////////////NumPy///////////////////
+
+-python3 -m pip install numpy
+
+-pip install --upgrade numpy
+
+
+
+///////////////////////////////////////////////////////////
+	Instalación de Mosquitto en Raspberry
+///////////////////////////////////////////////////////////
+El siguiente comando desinstala Mosquitto:
+
+-sudo apt-get purge --remove mosquitto
+
+Estos otros lo instalan.
+-sudo apt-get update -y
+-sudo apt-get upgrade -y
+-sudo apt-get install mosquitto -y
+-sudo apt-get install mosquitto-clients
+-sudo nano /etc/mosquitto/mosquitto.conf
+
+******Escribir las siguientes lineas hasta abajo del documento*****
+*******************************************************************	
+	allow_anonymous false
+	
+	password_file /etc/mosquitto/pwfile
+	
+	listener 1883
+*******************************************************************	
+
+**Presionar "Ctrl + O" (Para guardar archivo) y "Ctrl + X" (Para salir)
+
+-sudo mosquitto_passwd -c /etc/mosquitto/pwfile usuario
+	**(Escribir y confirmar contraseña)
+
+**Publicar*********************************************************
+  -mosquitto_sub -d -u usuario -P evc -t dev/test
+
+
+-pip install --user paho-mqtt
+
+
+///////////////////////////////////////////////////////////
+	Instalación Python 3.9.2-3 and IDLE
+///////////////////////////////////////////////////////////
+
+-sudo apt-get update
+-sudo apt-get upgrade
+-sudo apt-get install python3
+-sudo apt-get install idle
+
+
+/////////////////////////////////////////////////////////
+	Instalación Arduino IDLE
+/////////////////////////////////////////////////////////
+
+-sudo apt-get update
+-sudo apt-get upgrade
+-sudo apt-get install arduino arduino-core
+
+Revisar para instalar los complementos:
+
+https://edu.codigoiot.com/course/view.php?id=850
+
+Preferencias:
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json
+
+Librerias:
+EspMQTTClient
+DHT Sensor Library
+
+
+//////////////PyTorch////////////////////////////////
+
+# get a fresh start
+$ sudo apt-get update
+$ sudo apt-get upgrade
+# install the dependencies (if not already onboard)
+$ sudo apt-get install python3-pip libjpeg-dev libopenblas-dev libopenmpi-dev libomp-dev
+# above 58.3.0 you get version issues
+$ sudo -H pip3 install setuptools==58.3.0
+$ sudo -H pip3 install Cython
+# install gdown to download from Google drive
+$ sudo -H pip3 install gdown
+
+Bullseye OS
+# download the wheel
+$ gdown https://drive.google.com/uc?id=1ilCdwQX7bq72OW2WF26Og90OpqFX5g_-
+# install PyTorch 1.11.0
+$ sudo -H pip3 install torch-1.11.0a0+gitbc2c6ed-cp39-cp39-linux_aarch64.whl
+# clean up
+$ rm torch-1.11.0a0+gitbc2c6ed-cp39-cp39-linux_aarch64.whl
+
+/////////////NodeRed/////////////////////////
+
+-bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
+
+-ifconfig
