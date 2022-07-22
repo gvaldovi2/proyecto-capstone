@@ -1,3 +1,18 @@
+'''
+ * Envio de datos a NodeRed
+ * por:  Gonzalo Valdovinos Chacón
+         Julio Cesar Cerecedo Márquez
+         Francisco Javier Merino Muñoz
+ * Fecha: 26 de junio de 2022
+ * Ultima modificacion: 19 de Julio de 2022
+ * 
+ * Este programa envia y recibe valores a través de MQTT 
+ * para que sean recuperados por NodeRed y exista un 
+ * protocolo de comunicacion con Raspberry.
+ * 
+'''
+
+#Bibliotecas
 import time
 #from simple import MQTTClient
 import ubinascii
@@ -12,6 +27,8 @@ import dht
 from machine import Pin
 import _thread
 
+
+#####Del renglon 30 al 237 es el código del MQTTClient
 try:
     import usocket as socket
 except:
