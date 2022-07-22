@@ -7,7 +7,8 @@ INTEGRANTES:
 
 <ul>
 <li>Gonzalo Valdovinos Chacón</li>
-<li>Julio Cesar Cerecedo Márquez</li>
+<li>Julio Cesar Cerecedo Márquez</li>![sem](https://user-images.githubusercontent.com/96073948/180356998-1160080b-314e-4965-8558-111e377354c5.png)
+
 <li>Francisco Javier Merino Muñoz</li>
 </ul>
 
@@ -67,13 +68,12 @@ Ejecucion del plan del trabajo:
 ![image](https://user-images.githubusercontent.com/96073948/180356156-e7d382f1-4730-41f6-95da-5bc49293ce29.png)
 
 <h3>DASHBOARD<h3>
-![image](https://user-images.githubusercontent.com/96073948/180356184-9b9ea08d-3f5c-429c-ab34-1dbf58453b31.png)
+![image](https://user-images.githubusercontent.com/96073948/180357027-4bfa3cef-5872-405f-88d9-df59831bb165.png)
 
 ![image](https://user-images.githubusercontent.com/96073948/180354766-3bb538cb-beb9-4638-8631-fd1f1f3d0052.png)
 
 <h3>MAQUETA DEL SEMÁFORO<h3>
-![image](https://user-images.githubusercontent.com/96073948/180355289-6a50a07f-93a0-492f-b247-1cc7e5ce4739.png)
 
+![sem](https://user-images.githubusercontent.com/96073948/180356620-e9f79e6a-9535-40cc-8970-2cdd7ee5f14e.png)
 
-  
 
