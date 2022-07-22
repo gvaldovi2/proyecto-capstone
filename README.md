@@ -71,7 +71,7 @@ Ejecucion del plan del trabajo:
 
 ![image](https://user-images.githubusercontent.com/96073948/180354766-3bb538cb-beb9-4638-8631-fd1f1f3d0052.png)
 
-<h5>MAQUETA DEL SEMÁFORO</h3>
+<h5>MAQUETA DEL SEMÁFORO</h5>
 
 ![sem](https://user-images.githubusercontent.com/96073948/180356620-e9f79e6a-9535-40cc-8970-2cdd7ee5f14e.png)
 
