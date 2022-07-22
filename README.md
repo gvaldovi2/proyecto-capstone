@@ -7,8 +7,7 @@ INTEGRANTES:
 
 <ul>
 <li>Gonzalo Valdovinos Chacón</li>
-<li>Julio Cesar Cerecedo Márquez</li>![sem](https://user-images.githubusercontent.com/96073948/180356998-1160080b-314e-4965-8558-111e377354c5.png)
-
+<li>Julio Cesar Cerecedo Márquez</li>
 <li>Francisco Javier Merino Muñoz</li>
 </ul>
 
