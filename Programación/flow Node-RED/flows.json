@@ -1,0 +1,1030 @@
+[
+    {
+        "id": "4b9df1214eee98c4",
+        "type": "tab",
+        "label": "ProyectoFinalCapstone",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "88b6d1896858bed1",
+        "type": "ui_text",
+        "z": "4b9df1214eee98c4",
+        "group": "596285aab4284759",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "INFORMACIÒN",
+        "label": "",
+        "format": "INFORMACIÒN",
+        "layout": "row-center",
+        "x": 1000,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "f5fb823d50dae290",
+        "type": "exec",
+        "z": "4b9df1214eee98c4",
+        "command": "hostname",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 260,
+        "y": 40,
+        "wires": [
+            [
+                "a4d2d5f4b5353b8b"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "776c7d61eb638cf0",
+        "type": "inject",
+        "z": "4b9df1214eee98c4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 80,
+        "wires": [
+            [
+                "f5fb823d50dae290",
+                "8a60b9051f35079d"
+            ]
+        ]
+    },
+    {
+        "id": "a4d2d5f4b5353b8b",
+        "type": "ui_text",
+        "z": "4b9df1214eee98c4",
+        "group": "596285aab4284759",
+        "order": 3,
+        "width": 3,
+        "height": 2,
+        "name": "Hostname: ",
+        "label": "Hostname: ",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 460,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "8a60b9051f35079d",
+        "type": "exec",
+        "z": "4b9df1214eee98c4",
+        "command": "hostname -I",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 270,
+        "y": 100,
+        "wires": [
+            [
+                "18dbfa194aff2671"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "18dbfa194aff2671",
+        "type": "ui_text",
+        "z": "4b9df1214eee98c4",
+        "group": "596285aab4284759",
+        "order": 2,
+        "width": 3,
+        "height": 2,
+        "name": "Direcciòn IP: ",
+        "label": "Direcciòn IP: ",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 470,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "89bb648bdb429632",
+        "type": "inject",
+        "z": "4b9df1214eee98c4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 200,
+        "wires": [
+            [
+                "db8bd04ebc126d7b"
+            ]
+        ]
+    },
+    {
+        "id": "db8bd04ebc126d7b",
+        "type": "exec",
+        "z": "4b9df1214eee98c4",
+        "command": "date",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 250,
+        "y": 200,
+        "wires": [
+            [
+                "d9b9cb85cc9e4565"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d9b9cb85cc9e4565",
+        "type": "ui_text",
+        "z": "4b9df1214eee98c4",
+        "group": "596285aab4284759",
+        "order": 4,
+        "width": 6,
+        "height": 2,
+        "name": "Fecha:",
+        "label": "Fecha:",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 450,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "0a92b1d0fe0b4f86",
+        "type": "ui_text",
+        "z": "4b9df1214eee98c4",
+        "group": "596285aab4284759",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "ALMACENAMIENTO",
+        "label": "",
+        "format": "ALMACENAMIENTO",
+        "layout": "row-center",
+        "x": 1020,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "3a7374635babf109",
+        "type": "inject",
+        "z": "4b9df1214eee98c4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 280,
+        "wires": [
+            [
+                "8f7286742a81fb6c",
+                "ba5a406aa8a48688",
+                "f090c033b87994c7",
+                "3512eedd1e2315c6"
+            ]
+        ]
+    },
+    {
+        "id": "8f7286742a81fb6c",
+        "type": "exec",
+        "z": "4b9df1214eee98c4",
+        "command": "df -h --total | grep /dev/sda5 | awk '{print$2}'",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Total",
+        "x": 250,
+        "y": 260,
+        "wires": [
+            [
+                "a62bbafd59228a8e"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "a62bbafd59228a8e",
+        "type": "ui_text",
+        "z": "4b9df1214eee98c4",
+        "group": "596285aab4284759",
+        "order": 6,
+        "width": 3,
+        "height": 2,
+        "name": "Total:",
+        "label": "Total:",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 450,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "ba5a406aa8a48688",
+        "type": "exec",
+        "z": "4b9df1214eee98c4",
+        "command": "df -h --total | grep /dev/sda5 | awk '{print$3}'",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Uso",
+        "x": 250,
+        "y": 320,
+        "wires": [
+            [
+                "9e2480b53f748491"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "9e2480b53f748491",
+        "type": "ui_text",
+        "z": "4b9df1214eee98c4",
+        "group": "596285aab4284759",
+        "order": 7,
+        "width": 3,
+        "height": 2,
+        "name": "Uso:",
+        "label": "Uso:",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 450,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "f090c033b87994c7",
+        "type": "exec",
+        "z": "4b9df1214eee98c4",
+        "command": "df -h --total | grep /dev/sda5 | awk '{print$4}'",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Disponible",
+        "x": 270,
+        "y": 380,
+        "wires": [
+            [
+                "00f6809016932766"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "00f6809016932766",
+        "type": "ui_text",
+        "z": "4b9df1214eee98c4",
+        "group": "596285aab4284759",
+        "order": 8,
+        "width": 3,
+        "height": 2,
+        "name": "Disponible:",
+        "label": "Disponible:",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 470,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "3512eedd1e2315c6",
+        "type": "exec",
+        "z": "4b9df1214eee98c4",
+        "command": "df -h --total | grep /dev/sda5 | awk '{print$5}'",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Disponible %",
+        "x": 270,
+        "y": 440,
+        "wires": [
+            [
+                "d1129c21c50266fc"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "1c862fede852b1e6",
+        "type": "ui_gauge",
+        "z": "4b9df1214eee98c4",
+        "name": "",
+        "group": "596285aab4284759",
+        "order": 9,
+        "width": 3,
+        "height": 2,
+        "gtype": "gage",
+        "title": "Disponible",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#3465a4",
+            "#3465a4",
+            "#3465a4"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 630,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "d1129c21c50266fc",
+        "type": "change",
+        "z": "4b9df1214eee98c4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$substring(payload,0,($length(payload)-1))",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 440,
+        "wires": [
+            [
+                "1c862fede852b1e6"
+            ]
+        ]
+    },
+    {
+        "id": "4d72634957817516",
+        "type": "inject",
+        "z": "4b9df1214eee98c4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 520,
+        "wires": [
+            [
+                "e8b99f4ad4dd945b"
+            ]
+        ]
+    },
+    {
+        "id": "e8b99f4ad4dd945b",
+        "type": "exec",
+        "z": "4b9df1214eee98c4",
+        "command": "free | grep Memoria: | awk '{print$3/$2*100}'",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Uso Memoria",
+        "x": 270,
+        "y": 520,
+        "wires": [
+            [
+                "9e2f8745a73e6840"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d7e178dcf835b3fe",
+        "type": "ui_chart",
+        "z": "4b9df1214eee98c4",
+        "name": "CAMARA 1",
+        "group": "89d0a963df878ca0",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "",
+        "removeOlder": "12",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 630,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ad3c247848c503f4",
+        "type": "mqtt in",
+        "z": "4b9df1214eee98c4",
+        "name": "",
+        "topic": "codigoIoT/ProyectoCapstone/Cams",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "5657f1d209bb32b3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 680,
+        "wires": [
+            [
+                "27c878123e2681c4",
+                "5731f550e05609ef"
+            ]
+        ]
+    },
+    {
+        "id": "67437ca2ca87cf2f",
+        "type": "ui_text",
+        "z": "4b9df1214eee98c4",
+        "group": "89d0a963df878ca0",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Cam1",
+        "label": "Autos Cam1:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 610,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "df7e5e0d1f3349ed",
+        "type": "ui_text",
+        "z": "4b9df1214eee98c4",
+        "group": "56d7531bf6c3ee53",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "USO DE CPU",
+        "label": "",
+        "format": "USO DE CPU",
+        "layout": "row-center",
+        "x": 1000,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "cfd82eebee5f82e2",
+        "type": "ui_text",
+        "z": "4b9df1214eee98c4",
+        "group": "89d0a963df878ca0",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "CÀMARA 1",
+        "label": "",
+        "format": "CÀMARA 1",
+        "layout": "row-center",
+        "x": 990,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "9e2f8745a73e6840",
+        "type": "ui_chart",
+        "z": "4b9df1214eee98c4",
+        "name": "USO CPU",
+        "group": "56d7531bf6c3ee53",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "12",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 450,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "178d180a3a9ed9f5",
+        "type": "ui_text",
+        "z": "4b9df1214eee98c4",
+        "group": "89d0a963df878ca0",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "CÀMARA 2",
+        "label": "",
+        "format": "CÀMARA 2",
+        "layout": "row-center",
+        "x": 990,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "9ed07c2f3eb34d1b",
+        "type": "ui_chart",
+        "z": "4b9df1214eee98c4",
+        "name": "CAMARA 2",
+        "group": "89d0a963df878ca0",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "",
+        "removeOlder": "12",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 630,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1d3c738ff7f40b83",
+        "type": "ui_text",
+        "z": "4b9df1214eee98c4",
+        "group": "89d0a963df878ca0",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "Cam2",
+        "label": "Autos Cam2:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 610,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "f1326ee5fcfa2b83",
+        "type": "ui_text",
+        "z": "4b9df1214eee98c4",
+        "group": "56d7531bf6c3ee53",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "TEMPERATURA",
+        "label": "",
+        "format": "TEMPERATURA",
+        "layout": "row-center",
+        "x": 1010,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "2148570f2b15a5b5",
+        "type": "ui_text",
+        "z": "4b9df1214eee98c4",
+        "group": "56d7531bf6c3ee53",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "HUMEDAD",
+        "label": "",
+        "format": "HUMEDAD",
+        "layout": "row-center",
+        "x": 990,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "09398b78ed1adf95",
+        "type": "ui_text",
+        "z": "4b9df1214eee98c4",
+        "group": "89d0a963df878ca0",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "CÀMARAS",
+        "label": "",
+        "format": "CÀMARAS",
+        "layout": "row-center",
+        "x": 990,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "6783651958627384",
+        "type": "ui_chart",
+        "z": "4b9df1214eee98c4",
+        "name": "TEMPERATURA",
+        "group": "56d7531bf6c3ee53",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "12",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 690,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4bdf913b352ae143",
+        "type": "mqtt in",
+        "z": "4b9df1214eee98c4",
+        "name": "",
+        "topic": "codigoIoT/ProyectoCapstone/Temperatura",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "5657f1d209bb32b3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 980,
+        "wires": [
+            [
+                "3b04e77f821687fa",
+                "9ac44faad5e034b9"
+            ]
+        ]
+    },
+    {
+        "id": "68d13fef17839d47",
+        "type": "ui_chart",
+        "z": "4b9df1214eee98c4",
+        "name": "HUMEDAD",
+        "group": "56d7531bf6c3ee53",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "12",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 670,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2dec7c18496bd18d",
+        "type": "debug",
+        "z": "4b9df1214eee98c4",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "3b04e77f821687fa",
+        "type": "function",
+        "z": "4b9df1214eee98c4",
+        "name": "",
+        "func": "let s = msg.payload.split(',');\n\nmsg.payload = s[0];\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 960,
+        "wires": [
+            [
+                "2dec7c18496bd18d",
+                "6783651958627384"
+            ]
+        ]
+    },
+    {
+        "id": "9ac44faad5e034b9",
+        "type": "function",
+        "z": "4b9df1214eee98c4",
+        "name": "",
+        "func": "let s = msg.payload.split(',');\n\nmsg.payload = s[1];\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 1040,
+        "wires": [
+            [
+                "68d13fef17839d47"
+            ]
+        ]
+    },
+    {
+        "id": "27c878123e2681c4",
+        "type": "function",
+        "z": "4b9df1214eee98c4",
+        "name": "",
+        "func": "let s = msg.payload.split(',');\n\nmsg.payload = s[0];\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 680,
+        "wires": [
+            [
+                "67437ca2ca87cf2f",
+                "d7e178dcf835b3fe"
+            ]
+        ]
+    },
+    {
+        "id": "5731f550e05609ef",
+        "type": "function",
+        "z": "4b9df1214eee98c4",
+        "name": "",
+        "func": "let s = msg.payload.split(',');\n\nmsg.payload = s[1];\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 720,
+        "wires": [
+            [
+                "1d3c738ff7f40b83",
+                "9ed07c2f3eb34d1b"
+            ]
+        ]
+    },
+    {
+        "id": "596285aab4284759",
+        "type": "ui_group",
+        "name": "Sistema",
+        "tab": "58c048117f7bacaf",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": true
+    },
+    {
+        "id": "89d0a963df878ca0",
+        "type": "ui_group",
+        "name": "Històrico",
+        "tab": "58c048117f7bacaf",
+        "order": 2,
+        "disp": true,
+        "width": 10,
+        "collapse": true
+    },
+    {
+        "id": "5657f1d209bb32b3",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.0.33",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "56d7531bf6c3ee53",
+        "type": "ui_group",
+        "name": "Màs Històrico",
+        "tab": "58c048117f7bacaf",
+        "order": 3,
+        "disp": true,
+        "width": 10,
+        "collapse": true
+    },
+    {
+        "id": "58c048117f7bacaf",
+        "type": "ui_tab",
+        "name": "MONITOREO SEMAFORO",
+        "icon": "fa-dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    }
+]
