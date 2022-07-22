@@ -1,6 +1,6 @@
 
 
-Nota: El "-" representa un comando pero no se debe escribir.
+Nota: El "-" y el "$" representa un comando pero no se debe escribir.
 Nota: El "**" representa instrucciones.
 
 
