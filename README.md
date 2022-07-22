@@ -63,15 +63,15 @@ Ejecucion del plan del trabajo:
 
 ![image](https://user-images.githubusercontent.com/96073948/180354308-c6781fd9-9cb6-4912-8069-2af2dd9747b4.png)
 
-<h3>DISEÑO DEL DASHBOARD MEDIANTE NODE RED<h3>
+<h3>DISEÑO DEL DASHBOARD MEDIANTE NODE RED</h3>
 ![image](https://user-images.githubusercontent.com/96073948/180356156-e7d382f1-4730-41f6-95da-5bc49293ce29.png)
 
-<h3>DASHBOARD<h3>
+<h4>DASHBOARD</h4>
 ![image](https://user-images.githubusercontent.com/96073948/180357027-4bfa3cef-5872-405f-88d9-df59831bb165.png)
 
 ![image](https://user-images.githubusercontent.com/96073948/180354766-3bb538cb-beb9-4638-8631-fd1f1f3d0052.png)
 
-<h3>MAQUETA DEL SEMÁFORO<h3>
+<h5>MAQUETA DEL SEMÁFORO</h3>
 
 ![sem](https://user-images.githubusercontent.com/96073948/180356620-e9f79e6a-9535-40cc-8970-2cdd7ee5f14e.png)
 
