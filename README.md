@@ -50,3 +50,8 @@ Actividades:
 -Organización de actividades
 
 Ejecucion del plan del trabajo:
+
+<h3>DETECCION DE AUTOS POR LA IA (REDES NEURONAL CONVOLUCIONAL)<h3>
+
+![image](https://user-images.githubusercontent.com/96073948/180354308-c6781fd9-9cb6-4912-8069-2af2dd9747b4.png)
+
