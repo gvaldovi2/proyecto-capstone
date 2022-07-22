@@ -1,3 +1,18 @@
+'''
+ * Detección de Autos mediante un modelo entreando mediante una red neuronal artificial
+ * por:  Gonzalo Valdovinos Chacón
+         Julio Cesar Cerecedo Márquez
+         Francisco Javier Merino Muñoz
+ * Fecha: 26 de junio de 2022
+ * Ultima modificacion: 19 de Julio de 2022
+ * 
+ * Este programa carga el modelo entrenado para detectar autos,
+ * estos autos detectados los manda a un tópico al broker
+ * servidor montado en la Raspberry.
+ * 
+'''
+
+#Cargamos librerías
 import torch
 import cv2
 import numpy as np
